@@ -5,7 +5,7 @@ import Socials from "../Socials";
 import Button from "../common/Button";
 
 const StyledFooter = styled.footer`
-  background: #8a74d0;
+  background: ${({ theme }) => theme.secondaryCol};
   bottom: 0;
   left: 0;
   padding: 1.5em;
@@ -33,7 +33,7 @@ const StyledFooterButton = styled.div`
   text-align: center;
   z-index: 2;
   button {
-    background: #8a74d0;
+    background: ${({ theme }) => theme.secondaryCol};
     * {
       color: white;
     }

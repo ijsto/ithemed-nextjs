@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     transition: 0.3s all;
-    color: #333644;
+    color: ${({ theme }) => theme.dkPrimaryCol};
   }
   a:hover {
     color: orange
@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
   h6 {
     font-family: 'Source Sans Pro', sans-serif;
     margin-top: 1em;
-    color: #00474b;
+    color: ${({ theme }) => theme.dkPrimaryCol};
     font-weight: 600;
     text-shadow: 2px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
       1px -2px 0 #fff;
@@ -89,9 +89,9 @@ const GlobalStyle = createGlobalStyle`
     }
     &:focus {
       background-color: rgb(255, 255, 255);
-      color: #FF6666;
+      color: ${({ theme }) => theme.primaryCol};
       box-shadow: rgb(187, 187, 187) 0px 0px 5px 2px;
-      border-color: #8a74d0;
+      border-color: ${({ theme }) => theme.secondaryCol};
     }
   }
   label {

@@ -18,7 +18,7 @@ const StyledSingleBookHeader = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 150px;
-  background: #6bcd9b;
+  background: ${({ theme }) => theme.accentCol};
   h1 {
     color: white;
     text-shadow: none;
